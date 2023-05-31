@@ -1,0 +1,11 @@
+produkty = ["Chleb", "Ziemniaki", "Ser gouda"]
+wagi = [10, 5, 0.5]
+ceny = [6, 5, 12.22]
+
+print(f"{produkty[0]:10}, waga:{wagi[0]:10.2f} kg, cena:{ceny[0]:10.2f} PLN")
+print(f"{produkty[1]:10}, waga:{wagi[1]:10.2f} kg, cena:{ceny[1]:10.2f} PLN")
+print(f"{produkty[2]:10}, waga:{wagi[2]:10.2f} kg, cena:{ceny[2]:10.2f} PLN")
+print(f"{'suma':10} waga:{sum(wagi):10.2f} kg, cena:{sum(ceny):10.2f} ")
+
+for znak in "ABC":
+    print(znak)

@@ -1,0 +1,15 @@
+#domyslnie "r" - tylko do odczytu
+f = open("dane.txt", "w"), as f #tryb zapisu, w - write
+
+f = open("hello.py")
+
+for i, line in enumerate(f, start=1):
+    print(f"{i:03}: {line}")
+    
+f.close()
+
+
+with open("dane.txt", "w") as f:
+    f.write("cos tam")
+    f.write ("\n")
+    f.write("cos innego")

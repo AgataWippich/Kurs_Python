@@ -1,0 +1,34 @@
+#krotka jest niemutowalna
+krotka1 = (1, 2, 3, '1', 2.3)
+
+#slicing
+print(krotka1)
+print(krotka1[0]) #pierwszy element zbioru
+print(krotka1[1:4]) #elementy 2-3 (zbiór lewostronnie zamknięty, prawostronnie otwarty)
+
+print(krotka1[0:4:2]) #= print(krotka[::2])
+# wywołwanie () =/= wybieranie []
+
+#lista jest mutowalna
+lista = [6, 1, 10, 12, 3, 2]
+print(lista.sort())
+print(lista)
+print(1 in lista)
+
+#slownik to kolekcja par klucz - wartosc, klucze są unikalne (wartości mogą się powtarzać). Kluczem mogą być tylko obiekty hashowalne
+# slownik=([(uczen1 = 'Agata"), (czen2 = "Rafal")])
+# print(dir(slownik)) #zwraca wszystkie komendy dostepne w slowniku
+print("Agata" in slownik.values)
+print(help(slownik.pop))
+
+#zbiory i ich operatory
+zbior_a = {1, 2, 3, 4}
+zbior_b = {3, 4, 5, 6}
+print(zbior_a | zbior_b)
+print(zbior_a - zbior_b)
+print(zbior_a & zbior_b)
+print(zbior_a ^ zbior_b) #roznica symetryczna
+
+zbior_c = {2, 4, 6, 8, 10}
+zbior_d = {8, 9, 10, 11}
+print(zbior_c & zbior_d)
